@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hi, i&#39;m Henrique</title>
+    <link>https://henrikkudesu.github.io/</link>
+    <description>Recent content on Hi, i&#39;m Henrique</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+    <lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://henrikkudesu.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>https://henrikkudesu.github.io/about/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://henrikkudesu.github.io/about/</guid>
+      <description>Hi, my name is Leonardo, born in September 6th, 1996.
+I am a student of Systems Analysis and Development at Universidade Paulista (UNIP). I am currently employed as a production and logistics assistant at the multinational BASF and invest my free time studying development and programming languages. I also enjoy reading books (fantasy genres are my favorite), playing sports and taking care of my pets. I have six cats by the way.</description>
+    </item>
+    
+    <item>
+      <title>Contact Me</title>
+      <link>https://henrikkudesu.github.io/contact/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://henrikkudesu.github.io/contact/</guid>
+      <description>If for some reason you want to contact me, feel free to send me an e-mail or send me a dm on social media.
+  </description>
+    </item>
+    
+    <item>
+      <title>Why i created this blog?</title>
+      <link>https://henrikkudesu.github.io/posts/first-post/</link>
+      <pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://henrikkudesu.github.io/posts/first-post/</guid>
+      <description>So, why this blog? Well, I think that most programmers want to leave their mark somewhere and show what they are capable of, as well as show their respective work and contributions to gain some visibility in the job market. And a blog / portfolio is a great way to do that.
+So, for that reason, I decided to create my own, and also to record some of what I have learned, share experiences, learn and teach in my own way.</description>
+    </item>
+    
+  </channel>
+</rss>

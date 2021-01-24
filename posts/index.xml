@@ -1,0 +1,28 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Posts on Hi, i&#39;m Henrique</title>
+		<link>https://henrikkudesu.github.io/posts/</link>
+		<description>Recent content in Posts on Hi, i&#39;m Henrique</description>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright>
+		<lastBuildDate>Thu, 23 Jan 2020 00:00:00 +0000</lastBuildDate>
+		<atom:link href="https://henrikkudesu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Why i created this blog?</title>
+			<link>https://henrikkudesu.github.io/posts/first-post/</link>
+			<pubDate>Thu, 23 Jan 2020 00:00:00 +0000</pubDate>
+			
+			<guid>https://henrikkudesu.github.io/posts/first-post/</guid>
+			<description>So, why this blog? Well, I think that most programmers want to leave their mark somewhere and show what they are capable of, as well as show their respective work and contributions to gain some visibility in the job market. And a blog / portfolio is a great way to do that.
+So, for that reason, I decided to create my own, and also to record some of what I have learned, share experiences, learn and teach in my own way.</description>
+			<content type="html"><![CDATA[<h2 id="so-why-this-blog">So, why this blog?</h2>
+<p>Well, I think that most programmers want to leave their mark somewhere and show what they are capable of, as well as show their respective work and contributions to gain some visibility in the job market. And a blog / portfolio is a great way to do that.</p>
+<p>So, for that reason, I decided to create my own, and also to record some of what I have learned, share experiences, learn and teach in my own way.</p>
+<p>I hope the content posted here will be useful to someone someday and if you have any suggestions or feedback, feel free to <a href="/contact">contact</a> me.</p>
+]]></content>
+		</item>
+		
+	</channel>
+</rss>
