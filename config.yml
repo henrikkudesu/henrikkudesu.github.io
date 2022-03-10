@@ -119,6 +119,10 @@ menu:
       name: tags
       url: /tags
       weight: 20
+    - identifier: contato
+      name: contato
+      url: /contato
+      weight: 30
     #- identifier: example
     #  name: example.org
     #  url: https://example.org
