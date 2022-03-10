@@ -67,6 +67,8 @@ params:
         url: posts
       - name: Tags
         url: tags
+      - name: Contato
+        url: contato
 
   # home-info mode
   homeInfoParams:
