@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contact on Leonardo Henrique</title>
+    <link>http://localhost:1313/tags/contact/</link>
+    <description>Recent content in Contact on Leonardo Henrique</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Mar 2022 20:47:44 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/contact/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Contact</title>
+      <link>http://localhost:1313/contact/</link>
+      <pubDate>Thu, 10 Mar 2022 20:47:44 -0300</pubDate>
+      <guid>http://localhost:1313/contact/</guid>
+      <description>&lt;p&gt;Please feel free to contact me under my &lt;a href=&#34;mailto:leo_hns@hotmail.com&#34;&gt;e-mail&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/leonardo-henrikku&#34;&gt;LinkedIn&lt;/a&gt;, or &lt;a href=&#34;https://wa.me/5512997537263&#34;&gt;WhatsApp&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

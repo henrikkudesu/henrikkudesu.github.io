@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Posts on Henrique</title>
-    <link>https://henrikkudesu.github.io/posts/</link>
-    <description>Recent content in Posts on Henrique</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://henrikkudesu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Lorem Ipsum</title>
-      <link>https://henrikkudesu.github.io/posts/primeiro-post/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://henrikkudesu.github.io/posts/primeiro-post/</guid>
-      <description>Texto Descritivo.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Leonardo Henrique</title><link>https://henrikkudesu.github.io/posts/</link><description>Recent content in Posts on Leonardo Henrique</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://henrikkudesu.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Small Projects That Help Improve Your Programming Skills</title><link>https://henrikkudesu.github.io/posts/small-projects-to-improve/</link><pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate><guid>https://henrikkudesu.github.io/posts/small-projects-to-improve/</guid><description>&lt;p>Practicing with real-world projects is one of the best ways to enhance your programming skills. Frontend Mentor is a great platform that provides design challenges based on real-world scenarios, helping developers sharpen their skills in HTML, CSS, and JavaScript.&lt;/p>
+&lt;p>In &lt;a href="https://github.com/henrikkudesu/frontendmentor-challenges" target="_blank">my repository&lt;/a>, I have completed various projects that helped me improve my coding abilities. Here are some examples:&lt;/p>
+&lt;h3 id="-3-column-preview-card-component">📌 3-Column Preview Card Component&lt;/h3>
+&lt;p>This project focuses on building a responsive layout using CSS Flexbox and Grid to arrange content in three columns.&lt;/p></description></item></channel></rss>

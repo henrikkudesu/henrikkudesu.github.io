@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>contato on Henrique</title>
-    <link>https://henrikkudesu.github.io/tags/contato/</link>
-    <description>Recent content in contato on Henrique</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 10 Mar 2022 20:47:44 -0300</lastBuildDate><atom:link href="https://henrikkudesu.github.io/tags/contato/index.xml" rel="self" type="application/rss+xml" />
+    <title>Contato on Leonardo Henrique</title>
+    <link>http://localhost:1313/tags/contato/</link>
+    <description>Recent content in Contato on Leonardo Henrique</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 10 Mar 2022 20:47:44 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/contato/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Contato</title>
-      <link>https://henrikkudesu.github.io/contato/</link>
+      <link>http://localhost:1313/contato/</link>
       <pubDate>Thu, 10 Mar 2022 20:47:44 -0300</pubDate>
-      
-      <guid>https://henrikkudesu.github.io/contato/</guid>
-      <description>Entre em contato comigo através do meu e-mail, Instagram, LinkedIn, Twitter ou WhatsApp.</description>
+      <guid>http://localhost:1313/contato/</guid>
+      <description>&lt;p&gt;Entre em contato comigo através do meu &lt;a href=&#34;mailto:leo_hns@hotmail.com&#34;&gt;e-mail&lt;/a&gt;, &lt;a href=&#34;https://www.instagram.com/henrikku/&#34;&gt;Instagram&lt;/a&gt;, &lt;a href=&#34;https://www.linkedin.com/in/leonardo-henrikku&#34;&gt;LinkedIn&lt;/a&gt;, &lt;a href=&#34;https://twitter.com/henrikkudesu&#34;&gt;Twitter&lt;/a&gt; ou &lt;a href=&#34;https://wa.me/5512997537263&#34;&gt;WhatsApp&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

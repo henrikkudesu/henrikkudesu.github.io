@@ -1,3 +1,1 @@
 User-agent: *
-Disallow:
-Sitemap: https://henrikkudesu.github.io/sitemap.xml
