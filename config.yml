@@ -12,7 +12,11 @@ outputs:
     - 'HTML'
     - 'RSS'
 
-Paginate: 5
+# Paginate: 5 DEPRECATED
+pagination:
+  disableAliases: false
+  pagerSize: 5
+  path: page
 enableRobotsTXT: true
 # googleAnalytics: UA-123-45
 
@@ -201,7 +205,7 @@ params:
 
   footer:
     recentPosts:
-      path: 'blogs'
+      path: 'posts'
       count: 3
       title: Recent Posts
       enable: true
