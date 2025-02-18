@@ -195,6 +195,22 @@ params:
           - icon: fab fa-github
             url: https://github.com/henrikkudesu/henrikku-weather-app
 
+      - title: Civil Society Organization (CSO) Website (INESP Brasil)
+        content: I volunteered for a project to develop an online portal for the non-profit organization Instituto de Espetáculos Públicos do Brasil (Inesp Brasil).
+        image: /img/projects/inesp-brasil.png
+        featured:
+          name: Site
+          link: https://www.inespbrasil.site/
+        badges:
+          - 'HTML'
+          - 'CSS'
+          - 'Javascript'
+          - 'PHP'
+          - 'WordPress'
+        #links:
+        #- icon: fab fa-github
+        #url: https://github.com/henrikkudesu/henrikku-weather-app
+
   #Contact
   contact:
     enable: true
