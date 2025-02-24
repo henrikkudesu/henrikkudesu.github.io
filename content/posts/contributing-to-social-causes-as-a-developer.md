@@ -30,7 +30,7 @@ There are many platforms dedicated to connecting volunteers with social causes. 
 
 ### In Brazil:
 
-- **[Freehelper](https://www.freehelper.org)**: A platform that connects volunteers with NGOs and institutions in need of technical support, graphic design, web development, and other skills.
+- **[Freehelper](https://www.freehelper.com.br)**: A platform that connects volunteers with NGOs and institutions in need of technical support, graphic design, web development, and other skills.
 - **[Atados](https://www.atados.com.br)**: A website offering volunteer opportunities in various areas, from technology to in-person activities.
 
 ### In the USA:
