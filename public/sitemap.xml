@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/posts/contributing-to-social-causes-as-a-developer/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/social-awareness/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/volunteer/</loc>
+    <lastmod>2025-02-21T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/tags/backend/</loc>
     <lastmod>2025-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/frontend/</loc>
     <lastmod>2025-02-14T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/posts/small-projects-to-improve/</loc>
-    <lastmod>2025-02-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/tags/</loc>
     <lastmod>2025-02-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/</loc>

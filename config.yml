@@ -77,9 +77,9 @@ params:
       enable: true
     button:
       enable: true
-      name: 'Resume in pt-BR (PDF)'
-      url: 'https://github.com/henrikkudesu/henrikkudesu.github.io/tree/main/resume/resume.pdf'
-      newPage: false
+      name: 'Resume (English)'
+      url: 'https://github.com/henrikkudesu/henrikkudesu.github.io/tree/main/resume/resume_en_US.pdf'
+    newPage: false
     socialLinks:
       fontAwesomeIcons:
         #- icon: fab fa-twitter
