@@ -211,6 +211,22 @@ params:
         #- icon: fab fa-github
         #url: https://github.com/henrikkudesu/henrikku-weather-app
 
+      - title: LyriCat
+        content: An application that translates songs to Brazilian Portuguese and provides AI-powered explanations of their meanings and contexts.
+        image: /img/projects/lyricat-2.png
+        featured:
+          name: Demo
+          link: https://lyrycatfront.vercel.app
+        badges:
+          - 'React'
+          - 'Typescript'
+          - 'Python'
+          - 'Flask'
+          - 'Gemini IA'
+        links:
+          - icon: fab fa-github
+            url: https://github.com/henrikkudesu/LyriCat/tree/main
+
   #Contact
   contact:
     enable: true
