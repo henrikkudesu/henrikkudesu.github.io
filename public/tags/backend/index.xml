@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Backend on Leonardo Henrique</title>
-    <link>http://localhost:1313/tags/backend/</link>
+    <link>https://henrikkudesu.github.io/tags/backend/</link>
     <description>Recent content in Backend on Leonardo Henrique</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 14 Feb 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/backend/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://henrikkudesu.github.io/tags/backend/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Small Projects That Help Improve Your Programming Skills</title>
-      <link>http://localhost:1313/posts/small-projects-to-improve/</link>
+      <link>https://henrikkudesu.github.io/posts/small-projects-to-improve/</link>
       <pubDate>Fri, 14 Feb 2025 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/small-projects-to-improve/</guid>
+      <guid>https://henrikkudesu.github.io/posts/small-projects-to-improve/</guid>
       <description>&lt;p&gt;Practicing with real-world projects is one of the best ways to enhance your programming skills. Frontend Mentor is a great platform that provides design challenges based on real-world scenarios, helping developers sharpen their skills in HTML, CSS, and JavaScript.&lt;/p&gt;&#xA;&lt;p&gt;In &lt;a href=&#34;https://github.com/henrikkudesu/frontendmentor-challenges&#34; target=&#34;_blank&#34;&gt;my repository&lt;/a&gt;, I have completed various projects that helped me improve my coding abilities. Here are some examples:&lt;/p&gt;&#xA;&lt;h3 id=&#34;-3-column-preview-card-component&#34;&gt;📌 3-Column Preview Card Component&lt;/h3&gt;&#xA;&lt;p&gt;This project focuses on building a responsive layout using CSS Flexbox and Grid to arrange content in three columns.&lt;/p&gt;</description>
     </item>
   </channel>

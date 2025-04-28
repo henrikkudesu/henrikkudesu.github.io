@@ -227,6 +227,18 @@ params:
           - icon: fab fa-github
             url: https://github.com/henrikkudesu/LyriCat/tree/main
 
+      - title: Quick Alias
+        content: A browser extension that allows you to create custom text shortcuts (aliases) preceded by '/' to quickly insert predefined texts.
+        image: /img/projects/quickalias.png
+        featured:
+          name: Firefox Addon Store
+          link: https://addons.mozilla.org/pt-BR/firefox/addon/quickalias/
+        badges:
+          - 'Javascript'
+        links:
+          - icon: fab fa-github
+            url: https://github.com/henrikkudesu/quickAlias
+
   #Contact
   contact:
     enable: true
