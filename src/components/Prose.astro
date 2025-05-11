@@ -1,0 +1,55 @@
+---
+// Interface for component props
+interface Props {
+  class?: string;
+}
+
+const { class: additionalClasses = '' } = Astro.props;
+---
+
+<div
+  class={`prose prose-lg max-w-none
+    
+    /* Modern and clean design for headings */
+    prose-headings:font-semibold prose-headings:text-slate-800 prose-headings:mb-4 prose-headings:mt-8
+    prose-h1:text-3xl prose-h1:font-bold prose-h1:text-indigo-800
+    prose-h2:text-2xl prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-2
+    prose-h3:text-xl prose-h3:text-indigo-700
+    
+    /* More readable paragraphs */
+    prose-p:text-slate-700 prose-p:leading-7 prose-p:my-4
+    
+    /* Elegant links */
+    prose-a:text-indigo-600 prose-a:no-underline prose-a:border-b prose-a:border-indigo-300
+    hover:prose-a:border-indigo-600 hover:prose-a:text-indigo-800 prose-a:transition-all
+    
+    /* Polished images */
+    prose-img:rounded-lg prose-img:shadow-sm prose-img:mx-auto prose-img:my-6
+    
+    /* List improvements */
+    prose-li:text-slate-700 prose-li:my-1.5
+    prose-ul:space-y-1 prose-ul:pl-5
+    prose-ol:space-y-1 prose-ol:pl-5
+    
+    /* Subtle blockquotes */
+    prose-blockquote:border-l-2 prose-blockquote:border-slate-300
+    prose-blockquote:bg-slate-50 prose-blockquote:p-4 prose-blockquote:text-slate-600
+    prose-blockquote:not-italic prose-blockquote:rounded-r-md
+    
+    /* Elegant code with less contrast */
+    prose-code:text-rose-600 prose-code:bg-slate-100/70 prose-code:rounded-md
+    prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:font-normal
+    
+    /* Refined code blocks */
+    prose-pre:bg-slate-50 prose-pre:text-slate-700 prose-pre:p-4 prose-pre:rounded-md
+    prose-pre:border prose-pre:border-slate-200 prose-pre:overflow-x-auto
+    prose-pre:shadow-sm 
+    
+    /* Special treatment for code inside pre */
+    prose-pre:prose-code:bg-transparent prose-pre:prose-code:text-current
+    prose-pre:prose-code:p-0
+    
+    ${additionalClasses}`}
+>
+  <slot />
+</div>

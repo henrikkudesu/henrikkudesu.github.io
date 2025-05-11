@@ -1,0 +1,58 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import '../styles/global.css';
+
+const posts = await getCollection('blog');
+
+const resolvedPosts = await Promise.all(
+  posts.map(async (post) => {
+    const author = await getEntry(post.data.author);
+    return { ...post, author };
+  })
+);
+---
+
+<section class="py-12">
+  <h1 class="text-4xl font-bold text-slate-800 mb-8">Blog Posts</h1>
+
+  <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    {
+      resolvedPosts.map((post) => (
+        <article class="bg-white border border-slate-200 p-6 rounded-xl hover:shadow-md transition-all duration-300 hover:border-slate-300">
+          <a href={`/blog/${post.id}`} class="block space-y-4">
+            <h2 class="text-2xl font-semibold text-slate-800 group-hover:text-indigo-700 transition-colors">
+              {post.data.title}
+            </h2>
+
+            {post.data.description && (
+              <p class="text-slate-600 leading-relaxed">
+                {post.data.description}
+              </p>
+            )}
+
+            <div class="flex items-center pt-4 border-t border-slate-100">
+              <img
+                src={
+                  post.author.data.avatar ||
+                  '/images/authors/default-avatar.png'
+                }
+                alt={post.author.data.name}
+                class="w-10 h-10 rounded-full ring-2 ring-slate-100 mr-4 object-cover"
+              />
+              <div>
+                <p class="font-medium text-slate-700">
+                  {post.author.data.name}
+                </p>
+                {post.author.data.bio && (
+                  <p class="text-sm text-slate-500 line-clamp-1">
+                    {post.author.data.bio}
+                  </p>
+                )}
+              </div>
+            </div>
+          </a>
+        </article>
+      ))
+    }
+  </div>
+</section>

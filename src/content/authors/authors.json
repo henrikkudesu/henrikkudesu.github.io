@@ -1,0 +1,37 @@
+{
+  "john-doe": {
+    "name": "John Doe",
+    "email": "john@example.com",
+    "bio": "Web developer and technology enthusiast",
+    "avatar": "/images/authors/john-doe.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/johndoe",
+      "github": "https://github.com/johndoe"
+    }
+  },
+  "maria-silva": {
+    "name": "Maria Silva",
+    "email": "maria@example.com",
+    "bio": "UX/UI Designer",
+    "avatar": "/images/authors/maria-silva.png"
+  },
+  "pedro-santos": {
+    "name": "Pedro Santos",
+    "email": "pedro@example.com",
+    "bio": "Backend Developer and Node.js specialist",
+    "avatar": "/images/authors/pedro.png",
+    "socialLinks": {
+      "github": "https://github.com/pedrosantos",
+      "twitter": "https://twitter.com/pedrodev"
+    }
+  },
+  "ana-oliveira": {
+    "name": "Ana Oliveira",
+    "email": "ana@example.com",
+    "bio": "DevOps and Cloud Computing specialist",
+    "avatar": "/images/authors/ana.png",
+    "socialLinks": {
+      "github": "https://github.com/anaoliveira"
+    }
+  }
+}

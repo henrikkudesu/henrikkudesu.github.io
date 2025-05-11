@@ -1,48 +1,113 @@
-# Astro Starter Kit: Basics
+# Astro Blog Boilerplate
 
-```sh
-npm create astro@latest -- --template basics
+A type-safe blog boilerplate built with Astro, featuring content collections, author management, and flexible content modeling. While optimized for blogging, it's adaptable for docs, portfolios, or marketing sites.
+
+## Features
+
+- **Modern Styling:**
+
+  - Tailwind CSS for utility-first styling
+  - Tailwind Typography (Necessary for Markdown formatting in Astro)
+  - Responsive design out of the box
+
+- **Pre-built Components:**
+  - `BlogList.astro`: Ready-to-use component for displaying post listings
+  - `Prose.astro`: Markdown formatter with consistent typography
+  - `SocialIcons.astro`: A component to reference social icons quickly and easily
+  - `A tag system`: A tag system is already implemented
+- **Development Ready:**
+  - Type-safe content handling
+  - Hot module reloading
+  - Optimized build process
+
+## Content Configuration
+
+The `content.config.ts` file defines three main collections:
+
+### Blog Posts Collection
+
+- Uses `glob` loader to process all Markdown files in `src/content/blog`
+- **Required fields:**
+  - `title` (string): The post's title
+  - `date` (Date): Original creation date
+  - `pubDate` (Date): Publication date (coerced from string)
+  - `author` (reference): Links to an author in the `authors` collection
+  - `category` (string): Post category (e.g., "Tech", "Life", "Code")
+- **Optional fields:**
+  - `description` (string): Short post summary
+  - `updatedDate` (Date): Last modification date
+  - `relatedPosts` (reference array): Links to other blog posts
+  - `tags` (string[]): Array of related tags
+
+### Authors Collection
+
+- Loads data from `authors.json` file
+- **Required fields:**
+  - `name` (string): Author's full name
+  - `email` (string): Valid email address
+  - `avatar` (string): Path to author's image
+- **Optional fields:**
+  - `bio` (string): Author biography
+  - `socialLinks` (object): May include:
+    - `twitter` (string)
+    - `github` (string)
+    - `linkedin` (string)
+
+### Categories Collection
+
+- Defines available post categories
+- **Required fields:**
+  - `name` (string): Category name
+  - `description` (string): Category description
+  - `slug` (string): URL-friendly identifier
+
+## Data Structure
+
+### Authors Data (`authors.json`)
+
+```json
+{
+  "john-doe": {
+    "name": "John Doe",
+    "email": "john.doe@example.com",
+    "avatar": "/images/authors/john-doe.jpg",
+    "bio": "A passionate writer and developer.",
+    "socialLinks": {
+      "twitter": "johndoe_twitter",
+      "github": "johndoe_github",
+      "linkedin": "johndoe_linkedin"
+    }
+  }
+}
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+### Example Blog Post Frontmatter
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+```yaml
+---
+title: 'My First Post'
+date: 2024-01-01
+pubDate: 2024-01-01
+author: 'john-doe'
+category: 'Tech'
+tags: ['astro', 'web-dev']
+relatedPosts: ['second-post']
+description: 'An optional description'
+---
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Getting Started
 
-## 🧞 Commands
+1. Add authors to `authors.json`
+2. Configure categories in `categories.json`
+3. Create blog posts in `src/content/blog`
+4. Update site configuration in `astro.config.mjs`
+5. Customize theme in `tailwind.config.cjs`
 
-All commands are run from the root of the project, from a terminal:
+## Contributing
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Contributions are welcome! Feel free to fork the repository and submit pull requests with your improvements.
 
-## 👀 Want to learn more?
+## RTFM
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+For detailed documentation, check the [Astro Docs](https://docs.astro.build/en/getting-started/).
