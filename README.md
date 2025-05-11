@@ -1,6 +1,14 @@
 # Astro Blog Boilerplate
 
-A type-safe blog boilerplate built with Astro, featuring content collections, author management, and flexible content modeling. While optimized for blogging, it's adaptable for docs, portfolios, or marketing sites.
+A very minimal blog boilerplate built with Astro, featuring content collections, author management, and flexible content modeling. While optimized for blogging, it's adaptable for docs, portfolios, or marketing sites.
+
+## Screenshots
+
+<div style="display: flex; justify-content: center; gap: 10px;">
+<img src="screenshots/desktop-view.png" width="600">
+</div>
+
+For mobile view, see the screenshots for [posts](screenshots/posts-view-mobile.png) and [index](screenshots/post-view-mobile.png).
 
 ## Features
 
@@ -98,11 +106,11 @@ description: 'An optional description'
 
 ## Getting Started
 
-1. Add authors to `authors.json`
-2. Configure categories in `categories.json`
-3. Create blog posts in `src/content/blog`
-4. Update site configuration in `astro.config.mjs`
-5. Customize theme in `tailwind.config.cjs`
+### Change as you wish:
+
+1. Authors in `authors.json`
+2. Create blog posts in `src/content/blog`
+3. Update site configuration in `astro.config.mjs`
 
 ## Contributing
 
