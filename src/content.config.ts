@@ -35,6 +35,7 @@ const blogSchema = z.object({
   updatedDate: z.coerce.date().optional(),
   author: reference('authors'),
   tags: z.array(z.string()).min(1, 'At least one tag is required'),
+  image: z.string().optional(),
 });
 
 const authorSchema = z.object({
@@ -58,6 +59,19 @@ const authorSchema = z.object({
     .optional(),
 });
 
+const projectSchema = z.object({
+  title: z.string({
+    required_error: 'Title is required',
+    invalid_type_error: 'Title must be a string',
+  }),
+  description: z.string({ required_error: 'Description is required' }),
+  iconClass: z.string({ required_error: 'Icon class is required' }),
+  tags: z.array(z.string()).min(1, 'At least one tag is required'),
+  github: z.string().url({ message: 'Github must be a valid URL' }).optional(),
+  demo: z.string().url({ message: 'Demo must be a valid URL' }).optional(),
+  image: z.string(),
+});
+
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/blog' }),
   schema: blogSchema,
@@ -68,5 +82,10 @@ const authors = defineCollection({
   schema: authorSchema,
 });
 
+const projects = defineCollection({
+  loader: file('./src/content/projects/projects.json'),
+  schema: projectSchema,
+});
+
 // 4. Export a single `collections` object to register your collection(s)
-export const collections = { blog, authors };
+export const collections = { blog, authors, projects };

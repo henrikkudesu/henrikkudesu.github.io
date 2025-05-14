@@ -1,0 +1,54 @@
+{
+  "front-end-mentor": {
+    "title": "Frontend Mentor Challenges",
+    "description": "A collection of Frontend Mentor challenges, showcasing various UI designs and frontend development skills.",
+    "iconClass": "fas fa-project-diagram",
+    "tags": ["Javascript", "CSS", "Semantic HTML"],
+    "github": "https://github.com/henrikkudesu/frontendmentor-challenges",
+    "image": "/src/content/projects/frontend-mentor.webp"
+  },
+  "rest-countries-app": {
+    "title": "REST Countries App",
+    "description": "A web application that fetches country data from the REST Countries API, displaying details with dark/light mode support.",
+    "iconClass": "fas fa-project-diagram",
+    "tags": ["Vite", "React", "Typescript", "Tailwind CSS", "Rest"],
+    "github": "https://github.com/henrikkudesu/rest-countries-app",
+    "demo": "https://rest-countries-app-tawny.vercel.app/",
+    "image": "/src/content/projects/rest-countries.webp"
+  },
+  "weather-app": {
+    "title": "Weather App",
+    "description": "A simple weather app that fetches real-time weather data using OpenWeather API.",
+    "iconClass": "fas fa-project-diagram",
+    "tags": ["HTML", "CSS", "Javascript", "OpenWeather API"],
+    "github": "https://github.com/henrikkudesu/henrikku-weather-app",
+    "demo": "https://henrikku-weather-app.vercel.app/",
+    "image": "/src/content/projects/weather-app.webp"
+  },
+  "civil-society-organization": {
+    "title": "Civil Society Organization (CSO) Website (INESP Brasil)",
+    "description": "Developed an online portal for the non-profit organization Instituto de Espetáculos Públicos do Brasil (Inesp Brasil).",
+    "iconClass": "fas fa-project-diagram",
+    "tags": ["HTML", "CSS", "Javascript", "PHP", "WordPress"],
+    "demo": "https://www.inespbrasil.site/",
+    "image": "/src/content/projects/inesp.webp"
+  },
+  "lyricat" :{
+    "title": "LyriCat",
+    "description": "An application that translates songs to Brazilian Portuguese and provides AI-powered explanations of their meanings and contexts.",
+    "iconClass": "fas fa-project-diagram",
+    "tags": ["React", "Typescript", "Python", "Flask", "IA"],
+    "github": "https://github.com/henrikkudesu/LyriCat/tree/main",
+    "demo": "https://lyrycatfront.vercel.app",
+    "image": "/src/content/projects/lyricat.webp"
+  },
+  "quick-alias": {
+    "title": "Quick Alias",
+    "description": "A browser extension that allows you to create custom text shortcuts (aliases) preceded by '/' to quickly insert predefined texts.",
+    "iconClass": "fas fa-project-diagram",
+    "tags": ["Javascript"],
+    "github": "https://github.com/henrikkudesu/quickAlias",
+    "demo": "https://addons.mozilla.org/pt-BR/firefox/addon/quickalias/",
+    "image": "/src/content/projects/quickalias.png"
+  }
+}

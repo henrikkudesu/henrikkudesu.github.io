@@ -1,0 +1,36 @@
+---
+import SocialIcons from '../SocialIcons.astro';
+
+// Define your name and social links
+const name = 'Leonardo Nascimento';
+const socialLinks = {
+  github: 'https://github.com/henrikkudesu',
+  linkedin: 'https://linkedin.com/in/leonardo-henrikku',
+};
+---
+
+<footer
+  class="py-10 px-4 sm:px-8 lg:px-12 xl:px-16 bg-[#395144] border-t border-[#AA8B56]/20"
+>
+  <div class="max-w-7xl mx-auto flex flex-col items-center">
+    <div
+      class="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8"
+    >
+      <span class="text-[#F0EBCE] font-medium">
+        Developed by <span class="text-white font-bold">{name}</span>
+      </span>
+
+      <!-- Componente SocialIcons com estilização contrastante -->
+      <div class="flex gap-4">
+        <SocialIcons
+          class="w-10 h-10 rounded-full bg-[#F0EBCE]/10 flex items-center justify-center text-[#F0EBCE] hover:bg-[#F0EBCE] hover:text-[#395144] transition-colors duration-300"
+          socialLinks={socialLinks}
+        />
+      </div>
+    </div>
+
+    <div class="mt-4 text-sm text-[#F0EBCE]/80">
+      &copy; {new Date().getFullYear()} All rights reserved
+    </div>
+  </div>
+</footer>

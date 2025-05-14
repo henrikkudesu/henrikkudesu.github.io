@@ -1,0 +1,123 @@
+<header
+  class="sticky top-0 z-50 bg-[#F0EBCE]/90 backdrop-blur-sm py-4 px-4 sm:px-8 lg:px-12 xl:px-16 flex justify-between items-center border-b border-[#AA8B56]/20"
+>
+  <!-- Logo / Site Title -->
+  <a
+    href="/"
+    class="text-2xl font-bold bg-gradient-to-r from-[#4E6C50] to-[#AA8B56] bg-clip-text text-transparent hover:from-[#395144] hover:to-[#4E6C50] transition-all duration-300"
+  >
+    &lt;Leonardo /&gt;
+  </a>
+
+  <!-- Desktop Navigation Menu -->
+  <nav class="hidden md:block">
+    <ul class="flex space-x-6 md:space-x-8">
+      <li>
+        <a
+          href="/"
+          class="font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="#blog"
+          class="font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Hamburger Menu Button -->
+  <button
+    id="mobile-menu-button"
+    class="md:hidden text-[#395144] hover:text-[#AA8B56] focus:outline-none transition-colors duration-200"
+  >
+    <svg
+      class="w-6 h-6"
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+
+  <!-- Mobile Menu (hidden by default) -->
+  <div
+    id="mobile-menu"
+    class="hidden absolute top-full left-0 right-0 bg-[#F0EBCE]/95 backdrop-blur-sm py-2 px-4 border-t border-[#AA8B56]/20"
+  >
+    <ul class="flex flex-col space-y-1">
+      <li>
+        <a
+          href="/"
+          class="block font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Home
+        </a>
+      </li>
+      <li>
+        <a
+          href="#blog"
+          class="block font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Blog
+        </a>
+      </li>
+      <li>
+        <a
+          href="#projects"
+          class="block font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Projects
+        </a>
+      </li>
+      <li>
+        <a
+          href="#contact"
+          class="block font-medium text-[#395144] hover:text-[#AA8B56] transition-colors duration-200 px-3 py-2 rounded-md hover:bg-[#4E6C50]/10"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (mobileMenuButton && mobileMenu) {
+      mobileMenuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>

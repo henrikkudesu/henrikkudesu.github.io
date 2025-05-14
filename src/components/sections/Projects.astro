@@ -1,0 +1,80 @@
+---
+import { getCollection } from 'astro:content';
+
+const projects = await getCollection('projects');
+---
+
+<section
+  id="projects"
+  class="py-20 bg-gradient-to-br from-[#395144] via-[#3a5548] to-[#4E6C50]"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <h2 class="text-4xl md:text-5xl font-bold text-[#F0EBCE] mb-4">
+        My Projects
+      </h2>
+      <p class="text-xl text-[#F0EBCE]/90 max-w-3xl mx-auto">
+        Here are some of my recent projects that showcase my skills and
+        expertise.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        projects.map((project) => (
+          <div class="project-card group bg-[#F0EBCE] rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 border border-white/20 backdrop-blur-sm">
+            <div class="h-56 bg-gradient-to-r from-[#4E6C50] to-[#395144] flex items-center justify-center relative overflow-hidden">
+              <img
+                src={project.data.image}
+                alt={project.data.title}
+                class="w-full h-full object-cover"
+              />
+              <div class="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-all duration-300" />
+            </div>
+
+            <div class="p-6">
+              <div class="flex justify-between items-start mb-3">
+                <h3 class="text-xl font-bold text-[#395144] group-hover:text-[#AA8B56] transition-colors duration-300">
+                  {project.data.title}
+                </h3>
+              </div>
+
+              <p class="text-[#4E6C50] mb-5">{project.data.description}</p>
+
+              <div class="flex flex-wrap gap-2 mb-5">
+                {project.data.tags?.map((tag) => (
+                  <span class="px-3 py-1 bg-[#4E6C50]/10 text-[#395144] rounded-full text-sm font-medium hover:bg-[#4E6C50]/20 transition-colors duration-300">
+                    #{tag}
+                  </span>
+                ))}
+              </div>
+
+              <div class="flex space-x-4 border-t border-[#AA8B56]/20 pt-4">
+                {project.data.github && (
+                  <a
+                    href={project.data.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#AA8B56] font-medium hover:text-[#4E6C50] flex items-center transition-colors duration-300"
+                  >
+                    <i class="fab fa-github mr-2" /> Code
+                  </a>
+                )}
+                {project.data.demo && (
+                  <a
+                    href={project.data.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-[#AA8B56] font-medium hover:text-[#4E6C50] flex items-center transition-colors duration-300"
+                  >
+                    <i class="fas fa-external-link-alt mr-2" /> Live Demo
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

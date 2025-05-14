@@ -5,9 +5,11 @@ interface Props {
     twitter?: string;
     linkedin?: string;
   };
+  class?: string;
+  [key: string]: any;
 }
 
-const { socialLinks } = Astro.props;
+const { socialLinks, class: className, ...rest } = Astro.props;
 ---
 
 <div class="flex gap-3">
@@ -17,7 +19,8 @@ const { socialLinks } = Astro.props;
         href={socialLinks.github}
         target="_blank"
         rel="noopener noreferrer"
-        class="text-slate-500 hover:text-indigo-600 transition-colors"
+        class={className}
+        {...rest}
         title="GitHub"
       >
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -33,7 +36,8 @@ const { socialLinks } = Astro.props;
         href={socialLinks.twitter}
         target="_blank"
         rel="noopener noreferrer"
-        class="text-slate-500 hover:text-indigo-600 transition-colors"
+        class={className}
+        {...rest}
         title="Twitter"
       >
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -49,7 +53,8 @@ const { socialLinks } = Astro.props;
         href={socialLinks.linkedin}
         target="_blank"
         rel="noopener noreferrer"
-        class="text-slate-500 hover:text-indigo-600 transition-colors"
+        class={className}
+        {...rest}
         title="LinkedIn"
       >
         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

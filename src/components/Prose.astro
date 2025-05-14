@@ -10,44 +10,64 @@ const { class: additionalClasses = '' } = Astro.props;
 <div
   class={`prose prose-lg max-w-none
     
-    /* Modern and clean design for headings */
-    prose-headings:font-semibold prose-headings:text-slate-800 prose-headings:mb-4 prose-headings:mt-8
-    prose-h1:text-3xl prose-h1:font-bold prose-h1:text-indigo-800
-    prose-h2:text-2xl prose-h2:border-b prose-h2:border-slate-200 prose-h2:pb-2
-    prose-h3:text-xl prose-h3:text-indigo-700
+    /* Base Colors */
+    prose-headings:text-[#395144] 
+    prose-p:text-[#4E6C50]
+    prose-a:text-[#AA8B56]
     
-    /* More readable paragraphs */
-    prose-p:text-slate-700 prose-p:leading-7 prose-p:my-4
+    /* Tipography */
+    prose-headings:font-bold prose-headings:mb-4 prose-headings:mt-8
+    prose-h1:text-4xl prose-h1:border-b prose-h1:border-[#AA8B56]/20 prose-h1:pb-3
+    prose-h2:text-3xl prose-h2:mt-10
+    prose-h3:text-2xl prose-h3:mt-8
+    prose-h4:text-xl
     
-    /* Elegant links */
-    prose-a:text-indigo-600 prose-a:no-underline prose-a:border-b prose-a:border-indigo-300
-    hover:prose-a:border-indigo-600 hover:prose-a:text-indigo-800 prose-a:transition-all
+    /* Paragraphs */
+    prose-p:leading-relaxed prose-p:my-5
     
-    /* Polished images */
-    prose-img:rounded-lg prose-img:shadow-sm prose-img:mx-auto prose-img:my-6
     
-    /* List improvements */
-    prose-li:text-slate-700 prose-li:my-1.5
-    prose-ul:space-y-1 prose-ul:pl-5
-    prose-ol:space-y-1 prose-ol:pl-5
+    /* Links */
+    prose-a:no-underline prose-a:border-b prose-a:border-[#AA8B56]/50
+    prose-a:transition-all prose-a:duration-300
+    prose-a:hover:border-[#AA8B56] prose-a:hover:text-[#4E6C50]
     
-    /* Subtle blockquotes */
-    prose-blockquote:border-l-2 prose-blockquote:border-slate-300
-    prose-blockquote:bg-slate-50 prose-blockquote:p-4 prose-blockquote:text-slate-600
-    prose-blockquote:not-italic prose-blockquote:rounded-r-md
+    /* Images */
+    prose-img:rounded-xl prose-img:shadow-md prose-img:mx-auto prose-img:my-8
+    prose-img:border prose-img:border-[#AA8B56]/20
     
-    /* Elegant code with less contrast */
-    prose-code:text-rose-600 prose-code:bg-slate-100/70 prose-code:rounded-md
-    prose-code:px-1.5 prose-code:py-0.5 prose-code:text-sm prose-code:font-normal
+    /* Lists */
+    prose-li:marker:text-[#AA8B56]
+    prose-ul:space-y-2 prose-ul:pl-5 prose-ul:text-[#4E6C50]
+    prose-ol:space-y-2 prose-ol:pl-5 prose-li:text-[#4E6C50]
     
-    /* Refined code blocks */
-    prose-pre:bg-slate-50 prose-pre:text-slate-700 prose-pre:p-4 prose-pre:rounded-md
-    prose-pre:border prose-pre:border-slate-200 prose-pre:overflow-x-auto
-    prose-pre:shadow-sm 
+    /* Quoting */
+    prose-blockquote:border-l-4 prose-blockquote:border-[#AA8B56]
+    prose-blockquote:bg-[#F0EBCE]/50 prose-blockquote:p-6 
+    prose-blockquote:text-[#4E6C50] prose-blockquote:not-italic
+    prose-blockquote:rounded-r-lg prose-blockquote:shadow-sm
     
-    /* Special treatment for code inside pre */
+    /* Code Lines */
+    prose-code:text-[#395144] prose-code:bg-[#F0EBCE] 
+    prose-code:rounded-md prose-code:px-2 prose-code:py-1 
+    prose-code:text-sm prose-code:font-medium prose-code:border prose-code:border-[#AA8B56]/20
+    
+    /* Code Blocks */
+    prose-pre:bg-[#395144] prose-pre:text-[#F0EBCE] prose-pre:p-5 
+    prose-pre:rounded-xl prose-pre:border prose-pre:border-[#AA8B56]/30
+    prose-pre:shadow-lg prose-pre:overflow-x-auto
+    
+    /* Special handling for code inside pre */
     prose-pre:prose-code:bg-transparent prose-pre:prose-code:text-current
-    prose-pre:prose-code:p-0
+    prose-pre:prose-code:p-0 prose-pre:prose-code:border-none
+    
+    /* Tables */
+    prose-table:border prose-table:border-[#AA8B56]/20
+    prose-th:bg-[#4E6C50]/10 prose-th:text-[#395144]
+    prose-td:border prose-td:border-[#AA8B56]/10
+    prose-tr:hover:bg-[#F0EBCE]/50
+    
+    /* Horizontal Lines */
+    prose-hr:border-t prose-hr:border-[#AA8B56]/20 prose-hr:my-10
     
     ${additionalClasses}`}
 >

@@ -33,5 +33,15 @@
     "socialLinks": {
       "github": "https://github.com/anaoliveira"
     }
+  },
+  "leonardo-nascimento": {
+    "name": "Leonardo Nascimento",
+    "email": "leo_hns@hotmail.com",
+    "bio": "Full Stack Developer",
+    "avatar": "/images/authors/leonardo-nascimento.jpg",
+    "socialLinks": {
+      "github": "https://github.com/henrikkudesu",
+      "linkedin": "https://www.linkedin.com/in/leonardo-henrikku/"
+    }
   }
 }

@@ -27,4 +27,4 @@ pnpm-debug.log*
 repomix-*
 
 # instructions for IA
-.github/instructions/INSTRUCTIONS.instructions.md
+.github/instructions/*
