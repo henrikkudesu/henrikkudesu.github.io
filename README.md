@@ -1,121 +1,155 @@
-# Astro Blog Boilerplate
+# Astro Portfolio with blog features
 
-A very minimal blog boilerplate built with Astro, featuring content collections, author management, and flexible content modeling. While optimized for blogging, it's adaptable for docs, portfolios, or marketing sites.
+A clean and modern portfolio template built with [Astro](https://astro.build/), ready to showcase your work and blog posts.
 
-## Screenshots
+## 🚀 Original Project
 
-<div style="display: flex; justify-content: center; gap: 10px;">
-<img src="screenshots/desktop-view.png" width="600">
-</div>
+This project is based on:
 
-For mobile view, see the screenshots for [posts](screenshots/posts-view-mobile.png) and [index](screenshots/post-view-mobile.png).
+- Original Repository: [henrikkudesu.github.io](https://github.com/henrikkudesu/henrikkudesu.github.io)
+- Base Template: [Astro-blog-boilerplate](https://github.com/henrikkudesu/Astro-blog-boilerplate)
 
-## Features
+## 🎯 Features
 
-- **Modern Styling:**
+- Minimalist design
+- Blog functionality
+- Portfolio showcase
+- Tag support
+- Fast performance
+- SEO friendly
+- Easy to customize
 
-  - Tailwind CSS for utility-first styling
-  - Tailwind Typography (Necessary for Markdown formatting in Astro)
-  - Responsive design out of the box
+## 🛠️ Getting Started
 
-- **Pre-built Components:**
-  - `BlogList.astro`: Ready-to-use component for displaying post listings
-  - `Prose.astro`: Markdown formatter with consistent typography
-  - `SocialIcons.astro`: A component to reference social icons quickly and easily
-  - `A tag system`: A tag system is already implemented
-- **Development Ready:**
-  - Type-safe content handling
-  - Hot module reloading
-  - Optimized build process
+1. Fork or clone this repository
+2. Install dependencies:
 
-## Content Configuration
+```bash
+npm install
+```
 
-The `content.config.ts` file defines three main collections:
+4. Start development server:
 
-### Blog Posts Collection
+```bash
+npm run dev
+```
 
-- Uses `glob` loader to process all Markdown files in `src/content/blog`
-- **Required fields:**
-  - `title` (string): The post's title
-  - `date` (Date): Original creation date
-  - `pubDate` (Date): Publication date (coerced from string)
-  - `author` (reference): Links to an author in the `authors` collection
-  - `category` (string): Post category (e.g., "Tech", "Life", "Code")
-- **Optional fields:**
-  - `description` (string): Short post summary
-  - `updatedDate` (Date): Last modification date
-  - `relatedPosts` (reference array): Links to other blog posts
-  - `tags` (string[]): Array of related tags
+## 📝 Customization
 
-### Authors Collection
+1. Update `src/content.config.ts` with your information
+2. Replace content in `src/content/` with your posts and projects
+3. Modify styles in `src/styles/` to match your preferences
 
-- Loads data from `authors.json` file
-- **Required fields:**
-  - `name` (string): Author's full name
-  - `email` (string): Valid email address
-  - `avatar` (string): Path to author's image
-- **Optional fields:**
-  - `bio` (string): Author biography
-  - `socialLinks` (object): May include:
-    - `twitter` (string)
-    - `github` (string)
-    - `linkedin` (string)
+# How content.config.ts Works
 
-### Categories Collection
+The content.config.ts file is the heart of the project's content management. It defines three main collections: blog, authors, and projects.
 
-- Defines available post categories
-- **Required fields:**
-  - `name` (string): Category name
-  - `description` (string): Category description
-  - `slug` (string): URL-friendly identifier
+## For the Blog
 
-## Data Structure
+- Posts must be written in Markdown (.md).
+- Each post requires: title, date, publication date, author, and at least one tag.
+- Dates are validated to prevent future dates.
+- You can optionally add a description and an image.
+- Posts are located in `src/content/blog/`.
 
-### Authors Data (`authors.json`)
+## For the Authors
+
+- Author data is stored in a JSON file (`src/content/authors/authors.json`).
+- Each author must have: a name (at least 2 characters) and a valid email.
+- Optionally, authors can have: a biography, avatar, and social links (Twitter/GitHub/Linkedin and so on, you can add more by changing `SocialIcons.astro` component).
+
+## For the Projects
+
+- Projects are defined in a JSON file (`src/content/projects/projects.json`).
+- Each project requires: title, description, icon class, and at least one tag.
+- Optionally, projects can include: a GitHub link and a demo link.
+- A project image is mandatory but you can change these kind of rules by adding or removing `.optional()` in `content.config.ts`.
+
+## How to Use
+
+- To create a new post: add a `.md` file in `src/content/blog/`.
+- To add an author: edit the `authors.json` file.
+- To add a project: edit the `projects.json` file.
+
+## Example of a Markdown Post
+
+```markdown
+---
+title: 'My Post'
+date: 2024-01-01
+pubDate: '2024-01-01'
+author: 'your-name'
+tags: ['technology', 'development']
+description: 'Optional description'
+image: '/images/blog/your-image.jpg'
+---
+
+Post content goes here...
+```
+
+Store your images at `./public/images/` and the components will do the rest (Like displaying the image on the cards (BlogList.astro)). The same goes to your project images.
+
+If something is configured incorrectly, Astro will display clear errors during development, helping to maintain content consistency.
+
+## Example of an Author in `authors.json`
 
 ```json
 {
   "john-doe": {
     "name": "John Doe",
-    "email": "john.doe@example.com",
-    "avatar": "/images/authors/john-doe.jpg",
-    "bio": "A passionate writer and developer.",
+    "email": "john@example.com",
+    "bio": "Web developer and technology enthusiast",
+    "avatar": "/images/authors/john-doe.png",
     "socialLinks": {
-      "twitter": "johndoe_twitter",
-      "github": "johndoe_github",
-      "linkedin": "johndoe_linkedin"
+      "twitter": "https://twitter.com/johndoe",
+      "github": "https://github.com/johndoe"
     }
   }
 }
 ```
 
-### Example Blog Post Frontmatter
+Each author entry must include a slug field. In this example, the slug is set as `john-doe`.
 
-```yaml
----
-title: 'My First Post'
-date: 2024-01-01
-pubDate: 2024-01-01
-author: 'john-doe'
-category: 'Tech'
-tags: ['astro', 'web-dev']
-relatedPosts: ['second-post']
-description: 'An optional description'
----
-```
+`projects.json` its similar. Just follow the rules from the schemas in `content.config.json` and you will be good.
 
-## Getting Started
+## How to style the markdown posts
 
-### Change as you wish:
+Just edit the `src/components/Prose.astro`. In additional you can change the styling of some parts of the post page by editing `src/pages/blogarticle/[slug].astro` file.
 
-1. Authors in `authors.json`
-2. Create blog posts in `src/content/blog`
-3. Update site configuration in `astro.config.mjs`
+## Component Explanation
 
-## Contributing
+This section outlines the functionality for three key components that combine JavaScript logic with HTML and Tailwind styling.
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests with your improvements.
+### Projects.astro
 
-## RTFM
+- Imports Astro's getCollection to fetch data from the "projects" collection (projects.json).
+- Displays a responsive grid layout.
+- For each project, a card is rendered with:
+  - An image featuring hover effects.
+  - Title, description, and tags as badges.
+  - Conditional links to GitHub and demo when available.
 
-For detailed documentation, check the [Astro Docs](https://docs.astro.build/en/getting-started/).
+### BlogList.astro
+
+- Retrieves blog posts using getCollection.
+- Maps posts to include author details via getEntry.
+- Limits the display to the 6 most recent posts (using slice(0, 6)).
+- Defines a Props interface for handling images efficiently.
+
+### SocialIcons
+
+- Accepts a socialLinks object with optional URLs for GitHub, Twitter, and LinkedIn.
+- Optionally takes a className for styling and collects additional props with the rest parameter.
+- Uses conditional rendering to display each social icon only if its URL is provided.
+
+## 📄 License
+
+This project is free to use. Feel free to fork and create your own portfolio!
+
+## 🙏 Credits
+
+Created by [henrikkudesu](https://github.com/henrikkudesu)
+
+# Read the Docs
+
+Astro Docs [here](https://docs.astro.build/en/getting-started/).
