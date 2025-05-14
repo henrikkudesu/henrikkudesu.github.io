@@ -5,7 +5,7 @@ pubDate: '2025-02-21'
 author: 'leonardo-nascimento'
 tags: ['projects', 'learning']
 description: 'Practicing with real-world projects is one of the best ways to enhance your programming skills.'
-image: 'src/content/blog/small-projects-to-improve/step-by-step.avif'
+image: '/images/blog/step-by-step.avif'
 ---
 
 Practicing with real-world projects is one of the best ways to enhance your programming skills. Frontend Mentor is a great platform that provides design challenges based on real-world scenarios, helping developers sharpen their skills in HTML, CSS, and JavaScript.

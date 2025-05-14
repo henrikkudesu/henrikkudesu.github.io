@@ -1,5 +1,6 @@
 ---
 import { getCollection, getEntry } from 'astro:content';
+import { Image } from 'astro:assets';
 
 const posts = await getCollection('blog');
 
@@ -10,7 +11,11 @@ const resolvedPosts = await Promise.all(
   })
 );
 
-const latestPosts = resolvedPosts.slice(0, 6); // Mostrando mais posts agora
+const latestPosts = resolvedPosts.slice(0, 6);
+
+interface Props {
+  src?: string | ImageMetadata | Promise<{ default: ImageMetadata }>;
+}
 ---
 
 <section
@@ -39,6 +44,8 @@ const latestPosts = resolvedPosts.slice(0, 6); // Mostrando mais posts agora
                   <img
                     src={post.data.image}
                     alt={post.data.title}
+                    width={320}
+                    height={144}
                     class="w-full h-full object-cover"
                   />
                 </div>

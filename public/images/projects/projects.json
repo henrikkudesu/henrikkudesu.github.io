@@ -5,7 +5,7 @@
     "iconClass": "fas fa-project-diagram",
     "tags": ["Javascript", "CSS", "Semantic HTML"],
     "github": "https://github.com/henrikkudesu/frontendmentor-challenges",
-    "image": "/images/projects/frontend-mentor.webp"
+    "image": "/src/content/projects/frontend-mentor.webp"
   },
   "rest-countries-app": {
     "title": "REST Countries App",
@@ -14,7 +14,7 @@
     "tags": ["Vite", "React", "Typescript", "Tailwind CSS", "Rest"],
     "github": "https://github.com/henrikkudesu/rest-countries-app",
     "demo": "https://rest-countries-app-tawny.vercel.app/",
-    "image": "/images/projects/rest-countries.webp"
+    "image": "/src/content/projects/rest-countries.webp"
   },
   "weather-app": {
     "title": "Weather App",
@@ -23,7 +23,7 @@
     "tags": ["HTML", "CSS", "Javascript", "OpenWeather API"],
     "github": "https://github.com/henrikkudesu/henrikku-weather-app",
     "demo": "https://henrikku-weather-app.vercel.app/",
-    "image": "/images/projects/weather-app.webp"
+    "image": "/src/content/projects/weather-app.webp"
   },
   "civil-society-organization": {
     "title": "Civil Society Organization (CSO) Website (INESP Brasil)",
@@ -31,7 +31,7 @@
     "iconClass": "fas fa-project-diagram",
     "tags": ["HTML", "CSS", "Javascript", "PHP", "WordPress"],
     "demo": "https://www.inespbrasil.site/",
-    "image": "/images/projects/inesp.webp"
+    "image": "/src/content/projects/inesp.webp"
   },
   "lyricat" :{
     "title": "LyriCat",
@@ -40,7 +40,7 @@
     "tags": ["React", "Typescript", "Python", "Flask", "IA"],
     "github": "https://github.com/henrikkudesu/LyriCat/tree/main",
     "demo": "https://lyrycatfront.vercel.app",
-    "image": "/images/projects/lyricat.webp"
+    "image": "/src/content/projects/lyricat.webp"
   },
   "quick-alias": {
     "title": "Quick Alias",
@@ -49,6 +49,6 @@
     "tags": ["Javascript"],
     "github": "https://github.com/henrikkudesu/quickAlias",
     "demo": "https://addons.mozilla.org/pt-BR/firefox/addon/quickalias/",
-    "image": "/images/projects/quickalias.png"
+    "image": "/src/content/projects/quickalias.png"
   }
 }

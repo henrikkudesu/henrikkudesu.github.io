@@ -5,7 +5,7 @@ pubDate: '2025-02-21'
 author: 'leonardo-nascimento'
 tags: ['volunteering', 'social causes']
 description: 'How developers can make a positive impact by volunteering their skills to social causes.'
-image: 'src/content/blog/contributing-to-social-causes-as-dev/social-awareness.jpg'
+image: '/images/blog/social-awareness.jpg'
 ---
 
 _I’m writing this post especially for developers at the beginning of their careers, but it can also be valuable for professionals at any level._
